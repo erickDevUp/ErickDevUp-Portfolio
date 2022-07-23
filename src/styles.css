@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+main{    
+    margin: auto;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.footer-basic {
+    padding:25px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
+  .icon{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 1px;
+    border:1px solid #ccc;
+  }
+
+
+  /************************************* MY INFO *************************************/
+  .myInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+}
+.divPincipalInfo{
+    display: flex;
+    align-items: center;  
+    margin-bottom: 20px;   
+    
+}
+.photo{
+    width: 75px;
+    height: 75px;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fc8313;
+    
+}
+.divNames{
+    
+    margin: auto;
+    text-align: center;
+}
+.divNames h1{
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+}
+.divNames h4{
+    font-size: small;
+    opacity: .5;
+    font-family:'Edu TAS Beginner', cursive;
+}
+.divNames span, .namePerfil{
+    opacity: 0.5;
+    font-size: small !important;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divMyself{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.divMyself ul li{
+    list-style: none;
+    font-size: small;
+    margin-bottom: 3px;font-family: 'Montserrat', sans-serif;
+}
+h2{
+    
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    opacity: .8;
+}
+
+
+
+  
+  /************************************* MY portfolio *************************************/
+  .myPortfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+}
+
+.myPortfolio h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    width: 100%;
+    color: #444;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    padding:  0 20px;
+}
+
+.contanerProyects{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    
+    grid-auto-rows: 500px;
+    
+    grid-row-gap: 10px;
+
+}
+.imgProject{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    object-position: top;
+}
+.infoProject{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px;
+    height: 35%;
+}
+.divProject
+{
+    
+    border-bottom: 1px solid #ddd;
+}
+.nameProject{
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 5px;
+    color: #444;
+}
+.descriptionProject{
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    margin-right: 1px;
+    text-align: left;
+}
+
+.linksProject{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.linkDeploy{
+    text-decoration: none;
+    color: #fff;
+    background-color: #07b7ce;
+    border-radius: 1rem;
+    padding: 8px 20px;
+}
+.stack i{
+    margin: 0 5px 0 0;
+    padding: 5px;
+    background-color: #00000033;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: small;
+}
+.linksProject a{
+    font-family: 'Montserrat', sans-serif;
+}
+.linkRepo{    
+    padding: 8px;
+    text-decoration: none;
+    color: #279784;
+}
+
+
+@media only screen and (min-width:600px){
+    .contanerProyects{
+        grid-template-columns: 33% 33% 33%;
+        
+        grid-auto-rows: 450px;
+        gap:1%;
+        grid-row-gap: 10px;
+    }
+    .imgProject{
+        height: 55%;
+    }
+    .infoProject{
+        height: 45%;
+    }
+    .divProject
+    {    
+        border: 1px solid #ddd;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+}
+  
+  /************************************* MY skills *************************************/
+
+  .mySkills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+
+}
+.mySkills h3{
+    font-size: large;
+    width: 100%;
+    color: #444;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.containerSkills{
+    display: flex;
+    overflow: auto;
+}
+.divSkills{
+    margin: 0 20px 5px 0;
+}
+.divSkills img{
+    width: 55px;
+    height: 55px;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.divSkills h4{
+    text-align: center;
+    font-size: x-small;
+    opacity: .8;
+    font-family: 'Montserrat', sans-serif;
+}
